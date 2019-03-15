@@ -1,0 +1,313 @@
+@import "reset.css";
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  .border-1px::before {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .border-1px::before {
+    transform: scaleY(0.333333);
+  }
+}
+::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+html #app,
+body #app {
+  width: 100%;
+  height: 100%;
+}
+html #app header,
+body #app header {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: #02a774;
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+html #app header .sousuo i,
+body #app header .sousuo i {
+  font-size: 25px;
+}
+html #app header .title span,
+body #app header .title span {
+  font-size: 20px;
+}
+html #app header .longin,
+body #app header .longin {
+  margin-right: -20px;
+}
+html #app header .longin span,
+body #app header .longin span {
+  float: left;
+}
+html #app .container,
+body #app .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+html #app .container section,
+body #app .container section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+html #app .container section .swiper-container,
+body #app .container section .swiper-container {
+  width: 100%;
+  height: 160px;
+}
+html #app .container section .swiper-container .swiper-slide,
+body #app .container section .swiper-container .swiper-slide {
+  *zoom: 1;
+}
+html #app .container section .swiper-container .swiper-slide li,
+body #app .container section .swiper-container .swiper-slide li {
+  width: 25%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+html #app .container section .swiper-container .swiper-slide li img,
+body #app .container section .swiper-container .swiper-slide li img {
+  width: 50px;
+  height: 50px;
+}
+html #app .container section .swiper-container .swiper-slide li span,
+body #app .container section .swiper-container .swiper-slide li span {
+  font-size: 12px;
+  color: #666;
+}
+html #app .container section .section-bottom,
+body #app .container section .section-bottom {
+  width: 100%;
+}
+html #app .container section .section-bottom .shanchang,
+body #app .container section .section-bottom .shanchang {
+  margin-left: 10px;
+  padding: 5px 0;
+  color: #959794;
+}
+html #app .container section .section-bottom .shanchang span,
+body #app .container section .section-bottom .shanchang span {
+  float: left;
+}
+html #app .container section .section-bottom .contentLis,
+body #app .container section .section-bottom .contentLis {
+  padding: 5px;
+}
+html #app .container section .section-bottom .contentLis li,
+body #app .container section .section-bottom .contentLis li {
+  height: 80px;
+  display: flex;
+}
+html #app .container section .section-bottom .contentLis li img,
+body #app .container section .section-bottom .contentLis li img {
+  width: 75px;
+  height: 75px;
+  margin-right: 5px;
+}
+html #app .container section .section-bottom .contentLis li .showRight,
+body #app .container section .section-bottom .contentLis li .showRight {
+  position: relative;
+  height: 80px;
+  flex: 1;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightTop,
+body #app .container section .section-bottom .contentLis li .showRight .showRightTop {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightTop span,
+body #app .container section .section-bottom .contentLis li .showRight .showRightTop span {
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightTop span.bg,
+body #app .container section .section-bottom .contentLis li .showRight .showRightTop span.bg {
+  background-color: #ff0;
+  margin-right: 5px;
+  font-size: 13px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightTop p,
+body #app .container section .section-bottom .contentLis li .showRight .showRightTop p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightTop p span,
+body #app .container section .section-bottom .contentLis li .showRight .showRightTop p span {
+  float: left;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 14px;
+  border: 1px solid #f0f0f0;
+  color: #959794;
+  border-radius: 5px;
+  font-size: 8px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle {
+  position: relative;
+  margin: 16px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle span,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle span {
+  float: left;
+  font-size: 6px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis {
+  float: left;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start {
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.on,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.on {
+  background-image: url("../images/stars/star_on@2x.png");
+  background-size: 10px 10px;
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.on,
+  body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.on {
+    background-image: url("../images/stars/star_on@3x.png");
+  }
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.half,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.half {
+  background-image: url("../images/stars/star_half@2x.png");
+  background-size: 10px 10px;
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.half,
+  body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.half {
+    background-image: url("../images/stars/star_half@3x.png");
+  }
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.off,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.off {
+  background-image: url("../images/stars/star_off@2x.png");
+  background-size: 10px 10px;
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.off,
+  body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle .startLis .start.off {
+    background-image: url("../images/stars/star_off@3x.png");
+  }
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p span,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p span {
+  font-size: 10px;
+  background: #02a774;
+  color: #fff;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p span.on,
+body #app .container section .section-bottom .contentLis li .showRight .showRightMiddle p span.on {
+  margin-left: 5px;
+  background: #fff;
+  color: #02a774;
+  border: 1px solid #02a774;
+  font-size: 8px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightBottom,
+body #app .container section .section-bottom .contentLis li .showRight .showRightBottom {
+  width: 100%;
+  margin-bottom: 0px;
+}
+html #app .container section .section-bottom .contentLis li .showRight .showRightBottom p,
+body #app .container section .section-bottom .contentLis li .showRight .showRightBottom p {
+  float: left;
+  font-size: 10px;
+  color: #959794;
+  margin: 0px;
+}
+html #app .container section.on,
+body #app .container section.on {
+  display: block;
+}
+html #app .footer,
+body #app .footer {
+  width: 100%;
+  height: 50px;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html #app .footerList,
+body #app .footerList {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-items: content;
+}
+html #app .footerList::before,
+body #app .footerList::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f0f0f0;
+}
+html #app .footerList .footerLi,
+body #app .footerList .footerLi {
+  display: flex;
+  flex: 1;
+  color: #959794;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+html #app .footerList .footerLi.active,
+body #app .footerList .footerLi.active {
+  color: #4cae4c;
+}
+html #app .footerList .footerLi .iconfont,
+body #app .footerList .footerLi .iconfont {
+  font-size: 20px;
+}

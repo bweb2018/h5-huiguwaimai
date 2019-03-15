@@ -1,0 +1,205 @@
+@import "reset.css"
+@import "mixins.styl"
+html,body
+  overflow hidden
+  height 100%
+  #app
+    width 100%
+    height 100%
+    header
+      width 100%
+      height 50px
+      position absolute
+      top 0
+      left 0
+      color #fff
+      background #02a774
+      display flex
+      flex 3
+      align-items center
+      justify-content space-around
+      padding 0 4px
+      box-sizing:border-box
+      .sousuo
+        i
+         font-size 25px
+      .title
+        span
+          font-size 20px
+      .longin
+        margin-right -20px
+        span
+          float left
+    .container
+      width 100%
+      height 100%
+      position relative
+      margin-top 50px
+      section
+        .swiper-container
+          width 100%;
+          height 160px
+          .swiper-slide
+            clearFix()
+            li
+              width 25%
+              float left;
+              display flex
+              flex-direction column
+              align-items center
+              justify-content center
+              margin-bottom  5px
+              img
+                width 50px
+                height 50px
+              span
+                font-size 12px
+                color #666
+        .section-bottom
+          width 100%
+          //padding 5px!important
+          //background  #02a774
+          .shanchang
+            margin-left 10px
+            padding  5px 0
+            color #959794
+            span
+              float left
+          .contentLis
+            padding 5px
+            li
+              height 80px
+              display flex
+              img
+                width 75px
+                height 75px
+                margin-right 5px
+              .showRight
+                position relative
+                height 80px
+                flex 1
+                .showRightTop
+                  position relative
+                  display flex
+                  align-items center
+                  span
+                    float left
+                    font-size 16px
+                    font-weight 700
+                    &.bg
+                      background-color yellow
+                      margin-right 5px
+                      font-size 13px
+                  p
+                    position absolute
+                    top 0px
+                    right 0px
+                    span
+                      float left
+                      width: 14px
+                      height: 14px
+                      text-align center
+                      line-height 14px
+                      border: 1px solid #F0F0F0
+                      color #959794
+                      border-radius 5px
+                      font-size 8px
+                .showRightMiddle
+                  position relative
+                  margin 16px 0
+                  width: 100%
+                  display flex
+                  align-items center
+                  span
+                    float left
+                    font-size 6px
+                  .startLis
+                    float left
+                    .start
+                      width: 10px
+                      height: 10px
+                      float left
+                      &.on
+                        bg_image(star_on)
+                        background-size 10px 10px
+                      &.half
+                        bg_image(star_half)
+                        background-size 10px 10px
+                      &.off
+                        bg_image(star_off)
+                        background-size 10px 10px
+                  p
+                    display flex
+                    align-items center
+                    position absolute
+                    top 0px
+                    right 0px
+                    span
+                      font-size 10px
+                      background #02a774
+                      color #fff
+                      &.on
+                        margin-left 5px
+                        background #fff
+                        color #02a774
+                        border: 1px solid #02a774
+                        font-size 8px
+
+                .showRightBottom
+                  width: 100%
+                  margin-bottom 0px
+                  p
+                    float left
+                    //position absolute
+                    //left 0px
+                    //bottom 0px
+                    font-size 10px
+                    color #959794
+                    margin 0px
+
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        display none
+        &.on
+         display block
+    .footer
+        width: 100%
+        height 50px
+        z-index 100
+        //background gray
+        position absolute
+        left 0
+        bottom 0
+      .footerList
+          top-border-1px(#F0F0F0)
+          display flex
+          width 100%
+          height 100%
+          justify-items content
+          .footerLi
+            display flex
+            flex 1
+            color #959794
+            justify-content center
+            flex-direction column
+            align-items center
+            &.active
+              color #4cae4c
+            .iconfont
+              font-size 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
